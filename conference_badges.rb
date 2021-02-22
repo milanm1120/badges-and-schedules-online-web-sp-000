@@ -25,3 +25,5 @@ def printer(array)
     puts name
   end
 end
+
+printer
