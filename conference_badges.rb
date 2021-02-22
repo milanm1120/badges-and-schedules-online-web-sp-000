@@ -1,8 +1,8 @@
 # def badge_maker(name)
 #   return "Hello, my name is #{name}."
 # end
-# 
-# 
+#
+#
 # def batch_badge_creator(array)
 #   name_array = []
 #   array.each do |name|
@@ -10,8 +10,8 @@
 #   end
 #   return name_array
 # end
-# 
-# 
+#
+#
 # def assign_rooms(array)
 #   room = []
 #   array.each_with_index do |name, index|
