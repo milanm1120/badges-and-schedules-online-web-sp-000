@@ -26,4 +26,4 @@ def printer(array)
   end
 end
 
-printer
+printer("mike")
