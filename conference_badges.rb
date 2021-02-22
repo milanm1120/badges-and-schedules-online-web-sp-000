@@ -6,4 +6,4 @@ print badge_maker
 
 def batch_badge_creator(array)
 
-end 
+end
