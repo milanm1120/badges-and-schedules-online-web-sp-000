@@ -20,4 +20,4 @@ def assign_rooms(array)
   print room
 end
 
-assign_rooms
+assign_rooms("Jake")
