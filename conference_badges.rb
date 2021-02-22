@@ -1,32 +1,30 @@
-name = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-
 def badge_maker(name)
-  return "Hello, my name is #{name}." #Creating an indvidual badge.
+  return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(name)
-  new_array = []
-  name.each do |name| #Using iteration to make multiple bages associated with the array.
-    new_array << "Hello, my name is #{name}."
+
+def batch_badge_creator(array)
+  name_array = []
+  array.each do |name|
+    name_array << "Hello, my name is #{name}."
   end
-  return new_array
+  return name_array
 end
 
-def assign_rooms(name)
-  new_array = []
-  counter = 1 #adding a counter to which is used to assign a room number.
-  name.each do |name| #Using iteration to make multiple bages associated with the array.
-    new_array << "Hello, #{name}! You'll be assigned to room #{counter}!"
-    counter += 1 #increments counter by 1
+
+def assign_rooms(array)
+  room = []
+  array.each_with_index do |name, index|
+    room << "Hello, #{name}! You'll be assigned to room #{index +1}!"
   end
-  return new_array
+  return room
 end
 
-def printer(name)
- batch_badge_creator(name).each do |name|
-   puts name
+def printer(array)
+  batch_badge_creator(array).each do |name|
+    puts name
   end
- assign_rooms(name).each do |name|
-   puts name
+  assign_rooms(array).each do |name, index|
+    puts name
   end
 end
