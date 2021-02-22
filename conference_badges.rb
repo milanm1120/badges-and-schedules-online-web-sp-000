@@ -17,7 +17,7 @@ def assign_rooms(array)
   array.each_with_index do |name, index|
     room << "Hello, #{name}! You'll be assigned to room #{index +1}!"
   end
-  print room
+  puts room
 end
 
 assign_rooms(["jake", "mike", "kelly"])
