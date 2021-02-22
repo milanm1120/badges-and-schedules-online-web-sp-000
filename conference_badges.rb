@@ -19,3 +19,5 @@ def assign_rooms(array)
   end
   print room
 end
+
+assign_rooms
